@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         // TODO: Pt 1 - Initialize Parse SDK
-        ParseSwift.initialize(applicationId: "YOUR_PARSE_SERVER_APPLICATION-KEY",
-                              clientKey: "YOUR_PARSE_SERVER_CLIENT_KEY",
-                              serverURL: URL(string: "YOUR_PARSE_SERVER_API_ADDRESS")!)
+        ParseSwift.initialize(applicationId: "YoZZgEC6Csb17bh6oIMfkMc2BnV9zKpQ6gCcrjK2",
+                              clientKey: "03GW7G8EMM6ctvre0v9gNWGa6BPBJMAcrqeZyt4C",
+                              serverURL: URL(string: "https://parseapi.back4app.com")!)
 
         // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
 
