@@ -17,14 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
 
         // TODO: Pt 1 - Initialize Parse SDK
+        ParseSwift.initialize(applicationId: "YOUR_PARSE_SERVER_APPLICATION-KEY",
+                              clientKey: "YOUR_PARSE_SERVER_CLIENT_KEY",
+                              serverURL: URL(string: "YOUR_PARSE_SERVER_API_ADDRESS")!)
+
         // https://github.com/parse-community/Parse-Swift/blob/main/ParseSwift.playground/Sources/Common.swift
 
 
         // TODO: Pt 1: - Instantiate and save a test parse object to your server
         // https://github.com/parse-community/Parse-Swift/blob/3d4bb13acd7496a49b259e541928ad493219d363/ParseSwift.playground/Pages/1%20-%20Your%20first%20Object.xcplaygroundpage/Contents.swift#L121
-        ParseSwift.initialize(applicationId: "YOUR_PARSE_SERVER_APPLICATION-KEY",
-                              clientKey: "YOUR_PARSE_SERVER_CLIENT_KEY",
-                              serverURL: URL(string: "YOUR_PARSE_SERVER_API_ADDRESS")!)
         // Instantiate the test parse object
         var score = GameScore()
         score.playerName = "Kingsley"
